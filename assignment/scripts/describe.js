@@ -131,7 +131,7 @@ if (number >= 2) {
 
 /*
 // Fix - In this section, 'colorOne' is set to 'red' and 'colorTwo' is set to 'blue'. According to the
-// code description, these values are switched.
+// code description, these values should be switched.
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
@@ -174,7 +174,9 @@ const minAge = 21;
 // Fix - This check is intended to see if 'age' is >= 'minAge' to determine if somebody can enter.
 // If 'age' >= 'minAge', entry should be permitted.
 // In this code below, the exact opposite happens. When 'age' is >= 'minAge', console.log displays 'no entry'.
-// The easiest fix is to change '<=' to '>'.
+// The easiest fix is to change '<=' to '>' below so that 'no entry' is logged when minAge > age, or simply
+// switch the console.log messages.
+
 if(minAge <= age) {
   console.log('no entry');
 } else {
